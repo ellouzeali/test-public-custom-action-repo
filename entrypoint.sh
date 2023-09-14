@@ -11,7 +11,7 @@ ls -la >> contents.txt
 cat test.txt
 
 TEST_PATH=$(find . -name 'test.txt')
-CONTENT_PATH=$(find . -name 'contents.txt')
+CONTENT_PATH=cat contents.txt
 
 echo "test-file=$TEST_PATH" >> "$GITHUB_OUTPUT"
 echo "content-file=$CONTENT_PATH" >> "$GITHUB_OUTPUT"

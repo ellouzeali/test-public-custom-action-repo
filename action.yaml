@@ -1,0 +1,19 @@
+name: 'Build Test'
+description: 'A simple Docker build test'
+inputs:
+  source-code-path:
+    description: 'Path to the source code'
+    required: true
+outputs:
+  test-file:
+    description: 'Path to the test file'
+  content-file:
+    description: 'Path to the content file'
+  user-name:
+    description: 'The UserName'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'package'
+  color: 'blue'
